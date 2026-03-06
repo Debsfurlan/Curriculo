@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Débora Carvalho Furlan · Engenharia & Tecnologia</title>
+    
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Menu de Navegação -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">DÉBORA FURLAN</a>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Início</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#formacao" class="nav-link">Formação</a></li>
+                    <li><a href="#pesquisa" class="nav-link">Pesquisa</a></li>
+                    <li><a href="#projetos" class="nav-link">Projetos</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </div>
+            
+            <div class="nav-right">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home / Apresentação -->
+    <section id="home" class="home">
+        <div class="home-background">
+            <div class="gradient-sphere"></div>
+            <div class="particles" id="particles"></div>
+        </div>
+        
+        <div class="home-content">
+            <div class="home-profile">
+                <div class="profile-image-wrapper">
+                    <div class="profile-image-glow"></div>
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='90' fill='%23256eb3' /%3E%3Ccircle cx='100' cy='80' r='35' fill='%23ffffff' /%3E%3Cpath d='M60 150 Q100 190 140 150' stroke='%23ffffff' stroke-width='18' fill='none' stroke-linecap='round' /%3E%3C/svg%3E"
+                         alt="Débora Carvalho Furlan" class="profile-image">
+                </div>
+                
+                <div class="profile-badges">
+                    <span class="badge"><i class="fas fa-cog"></i> Eng. Mecânica</span>
+                    <span class="badge"><i class="fas fa-microchip"></i> Automação</span>
+                    <span class="badge"><i class="fas fa-code"></i> Tecnologia</span>
+                </div>
+            </div>
+            
+            <div class="home-text">
+                <h1 class="home-title">
+                    <span class="greeting">Olá, eu sou</span>
+                    <span class="name">Débora Carvalho Furlan</span>
+                </h1>
+                
+                <div class="typed-container">
+                    <span class="typed-text" id="typedText"></span>
+                    <span class="typed-cursor">|</span>
+                </div>
+                
+                <p class="home-description">
+                    Estudante de Engenharia Mecânica com formação técnica em Automação Industrial, 
+                    apaixonada por inovação tecnológica, energia renovável e desenvolvimento de 
+                    soluções sustentáveis.
+                </p>
+                
+                <div class="home-actions">
+                    <a href="#contato" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Entrar em contato
+                    </a>
+                    <a href="https://br.linkedin.com/in/d%C3%A9bora-carvalho-furlan-869aa6259" 
+                       target="_blank" class="btn btn-outline">
+                        <i class="fab fa-linkedin"></i>
+                        LinkedIn
+                    </a>
+                    <button class="btn btn-icon" id="downloadCV">
+                        <i class="fas fa-download"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Sobre Mim -->
+    <section id="sobre" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Quem sou</span>
+                <h2 class="section-title">Sobre Mim</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-card glass-card">
+                    <div class="about-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>Perfil Profissional</h3>
+                    <p>
+                        Sou estudante de Engenharia Mecânica com formação técnica em Automação Industrial. 
+                        Tenho interesse em inovação tecnológica, sistemas automatizados, energia renovável 
+                        e desenvolvimento de soluções tecnológicas utilizando programação e engenharia. 
+                        Busco constantemente ampliar meus conhecimentos em tecnologia, automação, 
+                        gestão de projetos e inteligência artificial aplicada à engenharia.
+                    </p>
+                </div>
+                
+                <div class="stats-grid">
+                    <div class="stat-item glass-card">
+                        <div class="stat-number" data-target="3">0</div>
+                        <div class="stat-label">Anos de Estudo</div>
+                    </div>
+                    <div class="stat-item glass-card">
+                        <div class="stat-number" data-target="8">0</div>
+                        <div class="stat-label">Projetos</div>
+                    </div>
+                    <div class="stat-item glass-card">
+                        <div class="stat-number" data-target="2">0</div>
+                        <div class="stat-label">Pesquisas</div>
+                    </div>
+                    <div class="stat-item glass-card">
+                        <div class="stat-number" data-target="5">0</div>
+                        <div class="stat-label">Certificações</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formação Acadêmica -->
+    <section id="formacao" class="section bg-dark">
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-subtitle">Educação</span>
+                <h2 class="section-title">Formação Acadêmica</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2022 - Presente</div>
+                    <div class="timeline-content glass-card">
+                        <h3>Engenharia Mecânica</h3>
+                        <p>Graduação em andamento</p>
+                        <div class="timeline-tags">
+                            <span>Termodinâmica</span>
+                            <span>Mecânica dos Fluidos</span>
+                            <span>Materiais</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2020 - 2021</div>
+                    <div class="timeline-content glass-card">
+                        <h3>Técnico em Automação Industrial</h3>
+                        <p>Curso técnico concluído</p>
+                        <div class="timeline-tags">
+                            <span>CLP</span>
+                            <span>Instrumentação</span>
+                            <span>Robótica</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Iniciação Científica -->
+    <section id="pesquisa" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Pesquisa</span>
+                <h2 class="section-title">Iniciação Científica</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="research-card glass-card">
+                <div class="research-badge">
+                    <i class="fas fa-flask"></i>
+                    <span>PIVICT 2024</span>
+                </div>
+                
+                <h3 class="research-title">
+                    Estudo da geração de energia elétrica a partir de célula combustível 
+                    alimentada por hidrogênio verde, gerado a partir de célula fotovoltaica
+                </h3>
+                
+                <div class="research-grid">
+                    <div class="research-info">
+                        <i class="fas fa-user"></i>
+                        <div>
+                            <strong>Estudante</strong>
+                            <span>Débora Carvalho Furlan</span>
+                        </div>
+                    </div>
+                    
+                    <div class="research-info">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <div>
+                            <strong>Orientador</strong>
+                            <span>Iberê de Oliveira Santos</span>
+                        </div>
+                    </div>
+                    
+                    <div class="research-info">
+                        <i class="fas fa-calendar"></i>
+                        <div>
+                            <strong>Período</strong>
+                            <span>03/2024 a 11/2024</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="research-description">
+                    <p>
+                        "O projeto teve como objetivo estudar a geração de energia elétrica a partir 
+                        de uma célula combustível alimentada por hidrogênio verde, produzido a partir 
+                        de energia solar fotovoltaica, contribuindo para o desenvolvimento de soluções 
+                        energéticas sustentáveis."
+                    </p>
+                </div>
+                
+                <div class="research-results">
+                    <h4>Resultados Obtidos</h4>
+                    <div class="results-bars">
+                        <div class="result-item">
+                            <span>Eficiência da célula</span>
+                            <div class="result-bar">
+                                <div class="result-progress" data-percent="85"></div>
+                            </div>
+                        </div>
+                        <div class="result-item">
+                            <span>Redução de CO₂</span>
+                            <div class="result-bar">
+                                <div class="result-progress" data-percent="92"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos" class="section bg-dark">
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-subtitle">Portfólio</span>
+                <h2 class="section-title">Projetos</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="engenharia">Engenharia</button>
+                <button class="filter-btn" data-filter="dev">Desenvolvimento</button>
+                <button class="filter-btn" data-filter="automacao">Automação</button>
+            </div>
+            
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Projetos serão inseridos via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Competências</span>
+                <h2 class="section-title">Habilidades</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="skills-wrapper">
+                <div class="skills-circles">
+                    <div class="skill-circle" data-percent="90">
+                        <div class="circle-chart" id="skillHtml"></div>
+                        <span>HTML</span>
+                    </div>
+                    <div class="skill-circle" data-percent="85">
+                        <div class="circle-chart" id="skillCss"></div>
+                        <span>CSS</span>
+                    </div>
+                    <div class="skill-circle" data-percent="75">
+                        <div class="circle-chart" id="skillJs"></div>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-circle" data-percent="88">
+                        <div class="circle-chart" id="skillAuto"></div>
+                        <span>Automação</span>
+                    </div>
+                    <div class="skill-circle" data-percent="82">
+                        <div class="circle-chart" id="skillMec"></div>
+                        <span>Eng. Mecânica</span>
+                    </div>
+                    <div class="skill-circle" data-percent="78">
+                        <div class="circle-chart" id="skillEnergy"></div>
+                        <span>Energia Renovável</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="section bg-dark">
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-subtitle">Vamos conversar</span>
+                <h2 class="section-title">Contato</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info glass-card">
+                    <h3>Informações de Contato</h3>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email</strong>
+                            <span>carvalhofurlandebora@email.com</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Telefone</strong>
+                            <span>(11) 99545-8813</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Localização</strong>
+                            <span>Suzano, SP</span>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <form class="contact-form glass-card" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="contactName" placeholder="Seu nome" required>
+                        <i class="fas fa-user"></i>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" id="contactEmail" placeholder="Seu email" required>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" id="contactSubject" placeholder="Assunto">
+                        <i class="fas fa-tag"></i>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea id="contactMessage" placeholder="Sua mensagem" rows="5" required></textarea>
+                        <i class="fas fa-comment"></i>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary full-width">
+                        <i class="fas fa-paper-plane"></i>
+                        Enviar mensagem
+                    </button>
+                    
+                    <div class="form-message" id="formMessage"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Débora Carvalho Furlan. Todos os direitos reservados.</p>
+                <p>Desenvolvido com <i class="fas fa-heart" style="color: #ff4d4d;"></i> e tecnologia</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
